@@ -4,7 +4,12 @@ from cmath import cos
 from cmath import tan
 from cmath import exp
 import matplotlib.pyplot as plt
+import sympy as sp
 import numpy as np
+import numpy as np
+
+# ***USE sp NOT np FOR SYMPY***
+
 #plt.show (this shows the graph)
 #plt.plot (this plots the points)
 # x = np.arange(0,2(np.pi), 0.1) (creates the x coordinates which will be graphed)
@@ -14,24 +19,35 @@ import numpy as np
 # plot title -> plt.title('EVEN MORE WORDS GO HERE') (creates a title)
 # showing legend -> plt.legend() (displays all of those words)
 
-x = np.arange(0, 2*(np.pi), 0.1)
+z = np.arange(0, 2 * np.pi, 0.1) # This creates the x coordinates which will be graphed
 
-y = np.sin(x)
+f = np.sin(z) # This is the function which is actually graphed
 
-dx = 0.1  # Define the value of dx
+x = sp.symbols('x') # This is the variable
 
-z = np.gradient(y, dx)  # Calculate the gradient using np.gradient
+y = sp.sin(x) # This is the function
 
-plt.plot(x, z)
+y_prime = sp.diff(y, x) # This is the derivative of the function
 
-plt.plot(x, y)
+y_prime_str = sp.printing.latex(y_prime) # This converts the derivative to a string
 
-plt.xlabel('X-Axis') 
+plt.plot(z, f) # Plots the points which we see on the graph
 
-plt.ylabel('Y-Axis')
+plt.xlabel('X-Axis') # Labels the x-axis
 
-plt.title('Graph')
+plt.ylabel('Y-Axis') # Labels the y-axis
 
-plt.legend()
+plt.subplots_adjust(right=0.7) # This moves the graph to the right
 
-plt.show()
+plt.title('Graph') # The title
+
+plt.legend() # This displays the legend, later on it will show which line is which (if there are multiple lines)
+
+text_string = f'Derivative: ${y_prime_str}$' # Computes the derivative
+
+plt.text(1.1, 0.5, text_string, fontsize=12, color='black', transform=plt.gca().transAxes) # Displays the derivative
+
+plt.show() # This shows the graph
+
+#Tasks for the day:
+    # Figure out how to make the graph extend into infinity on both sides
