@@ -50,4 +50,8 @@ plt.text(1.1, 0.5, text_string, fontsize=12, color='black', transform=plt.gca().
 plt.show() # This shows the graph
 
 #Tasks for the day:
+    # Figure out the derivative
+    # Figure out text (and more importantly how to display the derivative to the side of the graph)
+
+#Tasks for the future:
     # Figure out how to make the graph extend into infinity on both sides
