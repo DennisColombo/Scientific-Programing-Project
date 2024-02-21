@@ -1,0 +1,2 @@
+#This is where I process all the data I get from the raspberry pi
+#IMPORTANT: scp pi@10.10.71.136:Documents/output.txt /Users/denniscolombo/Documents (Use this in terminal)
