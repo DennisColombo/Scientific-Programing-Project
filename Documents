@@ -1,2 +1,60 @@
+from cmath import sin
+from cmath import pi
+from cmath import cos
+from cmath import tan
+from cmath import exp
+import matplotlib.pyplot as plt
+import sympy as sp
+import numpy as np
+
+#To get the data I need to run the command below in the terminal to get the latest version of output.txt (CONTINUES ON NEXT LINE)
+#into the project folder, and do note that the file named output.txt in the project will update automatically
+
 #This is where I process all the data I get from the raspberry pi
-#IMPORTANT: scp pi@10.10.71.136:Documents/output.txt /Users/denniscolombo/Documents (Use this in terminal)
+#IMPORTANT: scp pi@10.10.71.136:Documents/output.txt /Users/denniscolombo/git/Scientific-Programing-Project (Use this in terminal)
+
+# When I start collecting more complex data I will need:
+    #Derivative calculator / display function
+    #Line of best fit calculator / display function
+
+# Initialize an empty list
+vector = []
+
+# Open the file in read mode ('r')
+with open('output.txt', 'r') as f:
+    # Read the file line by line
+    for line in f:
+        # Convert the line to a number and append it to the list
+        number = float(line)
+        vector.append(number)
+
+plt.xlabel('Time (units unknown)')
+
+plt.ylabel('Y-Axis (units unknown)')
+
+plt.title('Data')
+
+plt.legend()
+
+# Generate a vector of x-values
+x_values = np.arange(len(vector))
+
+# Calculate the coefficients of the line of best fit
+coefficients = np.polyfit(x_values, vector, 1) # 1 is the degree of the polynomial (the one makes it linear)
+
+# Create a function that represents the line of best fit
+line_of_best_fit = np.poly1d(coefficients)
+
+# Generate some x values for the line of best fit
+x_values_for_line = np.linspace(0, len(vector), 100)
+
+# Plot the data points
+for i in range(len(vector)):
+    x = i
+    y = vector[i]
+    plt.scatter(x, y, c = "blue")
+
+# Plot the line of best fit
+plt.plot(x_values_for_line, line_of_best_fit(x_values_for_line), color='red')
+
+plt.show()

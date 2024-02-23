@@ -17,6 +17,15 @@ Tasks for the day (Febuary 9th, 2024):
         ~To build on this, get a line of best fit for your plot (DONE)
         ~Display the function and derivative of line of best fit (DONE)
 
+Tasks for the day (Febuary 23rd, 2024):
+    Collect data from the rasberry pi and plot it (DONE)
+    Figure out how to calculate the line of best fit for the data (DONE)
+    Come up with a plan for tasks I need to accomplish in the future (DONE)
+    Add some labels to help future me figure out what to do (DONE)
+
+Tasks for the future:
+    Figure out proper units for my axis, especially time (NOT DONE)
+
 Note: Password for rasberry pi is: robots1234
 
 Handy command to remember: (This command can pull the data after it is recorded)
