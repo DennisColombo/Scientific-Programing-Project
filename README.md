@@ -23,17 +23,21 @@ Tasks for the day (Febuary 23rd, 2024):
     Come up with a plan for tasks I need to accomplish in the future (DONE)
     Add some labels to help future me figure out what to do (DONE)
 
-Tasks for the day (Febuary 29th, 2023):
+Tasks for the day (Febuary 29th, 2024):
     Figure out how to get a timestamp (DONE)
     Figure out how to make the file clear itself after I run the program again (DONE)
         ~Note: You have to close the file to get it to update or else it will just display the same text
     Pull source code from the Pi so that I have a second copy just in case (DONE)
-    
 
-Tasks for the future:
-    Figure out proper units for my axis, especially time (NOT DONE)
+Tasks for the day (March 4th, 2024):
+    Pull up grove_rotary_angle_sensor.py in /home/pi/Desktop/GrovePi/Software/Python (DONE)
+    Make the rotary angle sensor work in a graphable way (DONE)
+    Figure out how to get the line of best fit to not be super short, it just doesn't make any sense at all (DONE)
+
+Long term objectives:
+    Figure out proper units for my axis, especially time (DONE)
     Investigate sensors to determine what we want our instrument to measure (NOT DONE)
-    Remember to pull source code once per week (IN PROGRESS)
+    Remember to pull source code once per week (DO ON FRIDAY)
 
 Note: Password for rasberry pi is: robots1234
 

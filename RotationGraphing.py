@@ -20,8 +20,19 @@ import numpy as np
     #Derivative calculator / display function
     #Line of best fit calculator / display function
 
-# Initialize an empty list
+plt.subplots_adjust(right=0.7)
+
+plt.xlabel('Time (Milliseconds)')
+
+plt.ylabel('Y-Axis (Degrees)')
+
+plt.title('Data')
+
+plt.legend()
+
+# Initialize empty lists
 vector = []
+x_values = []
 
 # Open the file in read mode ('r')
 with open('output.txt', 'r') as f:
@@ -32,24 +43,11 @@ with open('output.txt', 'r') as f:
         data = line.split('\t')
         number = float(data[0])
         ms = float(data[1])
-        ts = data[2]
         vector.append(number)
         x = ms - start
         y = number
         plt.scatter(x, y, c = "blue")
-
-plt.subplots_adjust(right=0.7)
-
-plt.xlabel('Time (milliseconds)')
-
-plt.ylabel('Y-Axis (units unknown)')
-
-plt.title('Data')
-
-plt.legend()
-
-# Generate a vector of x-values
-x_values = np.arange(len(vector))
+        x_values.append(x)
 
 # Calculate the coefficients of the line of best fit
 coefficients = np.polyfit(x_values, vector, 1) # 1 is the degree of the polynomial (the one makes it linear)
@@ -58,7 +56,7 @@ coefficients = np.polyfit(x_values, vector, 1) # 1 is the degree of the polynomi
 line_of_best_fit = np.poly1d(coefficients)
 
 # Generate some x values for the line of best fit
-x_values_for_line = np.linspace(0, len(vector), 100)
+x_values_for_line = np.linspace(0, x_values[-1], len(x_values))
 
 # Plot the line of best fit
 plt.plot(x_values_for_line, line_of_best_fit(x_values_for_line), color='red')
