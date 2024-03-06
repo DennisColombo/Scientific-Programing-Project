@@ -33,10 +33,16 @@ Tasks for the day (March 4th, 2024):
     Pull up grove_rotary_angle_sensor.py in /home/pi/Desktop/GrovePi/Software/Python (DONE)
     Make the rotary angle sensor work in a graphable way (DONE)
     Figure out how to get the line of best fit to not be super short, it just doesn't make any sense at all (DONE)
+    Figure out proper units for my axis, especially time (DONE)
+
+Tasks for the day (March 6th, 2024):
+    Work on long term objectives (NOT DONE)
 
 Long term objectives:
-    Figure out proper units for my axis, especially time (DONE)
+    Determine what scientific instrument I want to build (NOT DONE)
+    Determine which sensors I will need to build said instrument (NOT DONE)
     Investigate sensors to determine what we want our instrument to measure (NOT DONE)
+    Integrate Grove-LCD RGB Backlight in order to have a display for the Raspberry Pi (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
 
 Note: Password for rasberry pi is: robots1234
