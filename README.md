@@ -38,8 +38,13 @@ Tasks for the day (March 4th, 2024):
 Tasks for the day (March 6th, 2024):
     Work on long term objectives (NOT DONE)
 
+Tasks for the day (March 20th, 2024):
+    Add a display sensor to the rotation graphing program to figure out how that works (DONE)
+        ~I created a program which displays the degree value every 100 miliseconds
+    Add a way to toggle the display sensor with a button (NOT DONE)
+
 Long term objectives:
-    Determine what scientific instrument I want to build (NOT DONE)
+    Determine what scientific instrument I want to build (DONE)
     Determine which sensors I will need to build said instrument (NOT DONE)
     Investigate sensors to determine what we want our instrument to measure (NOT DONE)
     Integrate Grove-LCD RGB Backlight in order to have a display for the Raspberry Pi (NOT DONE)

@@ -70,3 +70,8 @@ text_string2 = f'Derivative of Best Fit: {line_of_best_fit_derivative}'
 plt.text(1.1, 0.5, text_string + '\n' + text_string2, fontsize=12, color='black', transform=plt.gca().transAxes)
 
 plt.show()
+
+#Display Sensor:
+    #Display the data from the sensor on the screen:
+
+    #Button toggle function (most likely will use a counter to make it work):
