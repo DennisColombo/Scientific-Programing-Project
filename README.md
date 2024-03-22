@@ -43,11 +43,18 @@ Tasks for the day (March 20th, 2024):
         ~I created a program which displays the degree value every 100 miliseconds
     Add a way to toggle the display sensor with a button (NOT DONE)
 
+Tasks for the day (March 22nd, 2024):
+    Work on the toggle button I failed to finish last class period (DONE)
+        ~It works, but it isn't perfect (more detail in long term objectives section)
+    Figure out how to display different graphs on different tabs (DONE)
+        ~Look in RotationGraphing.py to see how it works (plt.figure('some number here'))
+
 Long term objectives:
     Determine what scientific instrument I want to build (DONE)
     Determine which sensors I will need to build said instrument (NOT DONE)
     Investigate sensors to determine what we want our instrument to measure (NOT DONE)
-    Integrate Grove-LCD RGB Backlight in order to have a display for the Raspberry Pi (NOT DONE)
+    Integrate Grove-LCD RGB Backlight in order to have a display for the Raspberry Pi (DONE)
+    Fix the toggle button by ensuring that the backlight doesn't flip back to the first screen the moment the user stops holding down the button (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
 
 Note: Password for rasberry pi is: robots1234
