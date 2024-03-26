@@ -49,11 +49,16 @@ Tasks for the day (March 22nd, 2024):
     Figure out how to display different graphs on different tabs (DONE)
         ~Look in RotationGraphing.py to see how it works (plt.figure('some number here'))
 
+Tasks for the day (March 26th, 2024):
+    Determine which sensor(s) needed to build the sensor to bare minimum functionality (DONE)
+        ~Rangefinder (to measure distance)
+    Add rangefinder to raspberry pi and get it to work (NOT DONE)
+    Determine how to create an if statement with two requirements in python (DONE)
+    Remove clutter (completed objectives) from long term objectives list (DONE)
+
 Long term objectives:
-    Determine what scientific instrument I want to build (DONE)
-    Determine which sensors I will need to build said instrument (NOT DONE)
-    Investigate sensors to determine what we want our instrument to measure (NOT DONE)
-    Integrate Grove-LCD RGB Backlight in order to have a display for the Raspberry Pi (DONE)
+    Create code which will graph the rangefinder's data against time (NOT DONE)
+    Test the rangefinder to determine its accuracy (NOT DONE)
     Fix the toggle button by ensuring that the backlight doesn't flip back to the first screen the moment the user stops holding down the button (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
 
