@@ -56,10 +56,22 @@ Tasks for the day (March 26th, 2024):
     Determine how to create an if statement with two requirements in python (DONE)
     Remove clutter (completed objectives) from long term objectives list (DONE)
 
+Tasks for the day (March 28th, 2024):
+    Add rangefinder to raspberry pi and get it to work (DONE)
+    Test rangefinder against a ruler (DONE)
+        ~The rangefinder is within a few centimeters of the tape measurer, good enough for me
+    Make the rangefinder code actually go to the correct file (DONE) *Priority*
+    Make decision on whether or not the backlight will actually be helpful (DONE)
+        ~After significant work with it, I just don't see it being useful
+    Figure out the units for the rangefinder (DONE)
+        ~The rangefinder is measured in centimeters
+    Remove irrelevant and completed long term objectives (DONE)
+    Pull source code to make sure that nothing is lost (NOT DONE)
+
 Long term objectives:
-    Create code which will graph the rangefinder's data against time (NOT DONE)
-    Test the rangefinder to determine its accuracy (NOT DONE)
-    Fix the toggle button by ensuring that the backlight doesn't flip back to the first screen the moment the user stops holding down the button (NOT DONE)
+    Write code to graph data from the rangefinder (NOT DONE)
+    Test data gathered from my rangefinder against one of the physics apps I have (NOT DONE)
+    Assemble a structure so that I don't have to hold everything (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
 
 Note: Password for rasberry pi is: robots1234
