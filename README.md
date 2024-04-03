@@ -69,7 +69,7 @@ Tasks for the day (March 28th, 2024):
     Pull source code to make sure that nothing is lost (NOT DONE)
 
 Tasks for the day (April 3rd, 2024):
-    Write code to graph data from the rangefinder against time (NOT DONE)
+    Write code to graph data from the rangefinder against time (DONE)
     Get rangefinder data into the code (DONE)
     Assemble a structure so I don't have to hold everything while using the device (PARTLY DONE)
 
