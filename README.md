@@ -68,8 +68,15 @@ Tasks for the day (March 28th, 2024):
     Remove irrelevant and completed long term objectives (DONE)
     Pull source code to make sure that nothing is lost (NOT DONE)
 
+Tasks for the day (April 3rd, 2024):
+    Write code to graph data from the rangefinder against time (NOT DONE)
+    Get rangefinder data into the code (DONE)
+    Assemble a structure so I don't have to hold everything while using the device (PARTLY DONE)
+
 Long term objectives:
     Write code to graph data from the rangefinder (NOT DONE)
+    Improve the structure holding the instrument (NOT DONE)
+    Get the method used to collect data from the rangefinder is as easy as possible (NOT DONE)
     Test data gathered from my rangefinder against one of the physics apps I have (NOT DONE)
     Assemble a structure so that I don't have to hold everything (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
@@ -78,3 +85,7 @@ Note: Password for rasberry pi is: robots1234
 
 Handy command to remember: (This command can pull the data after it is recorded)
 scp pi@10.10.71.136:Documents/test.py /Users/denniscolombo/Documents
+    ~Note: IP Address is incorrect!
+Get the IP on the raspberry pi:
+run 'ifconfig' in the terminal on the raspberry pi, IP is in the 'wlan0' section labeled 'inet'
+Doing this will give us the IP Address of the raspberry pi and allow us to get data from it.
