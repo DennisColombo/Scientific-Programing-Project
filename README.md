@@ -73,12 +73,43 @@ Tasks for the day (April 3rd, 2024):
     Get rangefinder data into the code (DONE)
     Assemble a structure so I don't have to hold everything while using the device (PARTLY DONE)
 
+Tasks for the day (April 5th, 2024):
+    Create a plan to test the rangefinder against the physics app on my iPad (DONE)
+        ~Plan:
+            ~Step 1: Lay one of the portable whiteboards in the room flat on a table, this whiteboard will be called the 'track'
+                ~I need to make a mark on the beginning point and ending point so that way I know the distace I am measuring which will help ensure accuracy
+            ~Step 2: Get a large, flat object, which will be called the 'target object' from here on, and move it alongside the edge of the whiteboard from one end to the other
+                ~I will use another one of the portable whiteboards as it is pretty much impossible for the rangefinder to miss it and I will be able to easily ensure that the target object's face is perpendicular to the sides of the track
+                ~In order to make sure that the rangefinder isn't at an angle relative to the target, which would increase the distance and reduce accuracy, I will hold the rangefinder against one of the sides in order to keep it at the correct angle
+            ~Step 3: Move the target object on the track between the starting mark and ending mark and record the data using the rangefinder and Video Physics at the same time
+                ~Manually moving the target object, while inconvient, allows complete control over what the data looks like, at least theoretically
+                ~The iPad will be off to the side, recording video while the rangefinder records real-time data
+                ~The Video Physics app can keep track of time, and it can also allow to rewind to see what was going on at any given moment
+            ~Step 4: Compare data from each run, and record it in a google document
+                ~The graph from the data collected with the rangefinder vs. the graph from the points I manually plotted with the Video Physics app
+                ~The percent difference of a few points in time between the two methods of collecting data
+                    ~As expected, the lower the better...
+            ~Step 5: Repeat experiment in order to ensure that the results are good
+                ~Each time the experiment is repeated move the target object in a slightly different way to make sure that the rangefinder can handle more complex motion
+    Figure out a method of making the starting and ending marks on the track (DONE)
+        ~Ask for a dry erase marker when getting ready to run the tests, there are plenty available!
+    Write down the name of the physics app for clarity's sake (DONE)
+        ~Name of physics app: Video Physics
+    Clean up long term objectives section to remove unneeded clutter and make goals more accurate (DONE)
+    Ask GITHUB COPILOT if there is a better method of getting the derivative at a point from a scatter plot (PARTLY DONE)
+        ~I got some results but I didn't have time to actually refine the results that the AI spat out
+        ~I will keep working at it and remove the flawed plan I made from the long term objectives section
+        ~I will add this to long term objectives
+
 Long term objectives:
-    Write code to graph data from the rangefinder (NOT DONE)
+    Improve the code which graphs the data from the rangefinder (NOT DONE)
+    Ask GITHUB COPILOT if there is a better method of getting the derivative at a point from a scatter plot (CONTINUE)
+        ~Code must have a derivative funtion, this is VERY different from a line of best fit
+            ~Until this is done, I can't compare the velocity or the acceleration of Video Physics and my device
+    Determine potential sources of error for my rangefinder, and determine if there are ways to address them (NOT DONE)
     Improve the structure holding the instrument (NOT DONE)
-    Get the method used to collect data from the rangefinder is as easy as possible (NOT DONE)
-    Test data gathered from my rangefinder against one of the physics apps I have (NOT DONE)
-    Assemble a structure so that I don't have to hold everything (NOT DONE)
+    Make getting data from the rangefinder quick and easy (NOT DONE)
+    Test data gathered from my rangefinder against data from Video Physics (NOT DONE)
     Remember to pull source code once per week (DO ON FRIDAY)
 
 Note: Password for rasberry pi is: robots1234
