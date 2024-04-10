@@ -101,7 +101,12 @@ Tasks for the day (April 5th, 2024):
         ~I will keep working at it and remove the flawed plan I made from the long term objectives section
         ~I will add this to long term objectives
 
+Tasks for the day (April 10th, 2024):
+    Begin testing of rangefinder system (STARTED, NOT SUCCESSFUL YET)
+        ~Note: I came up with a much better idea to test the rangefinder where I hold it straight up above a surface at a height I have already measured and film myself moving it up slowly with video physics. This will just simplify things so much so that's what we're going to do.
+
 Long term objectives:
+    Show plan to test the rangefinder to a physics teacher to determine of it is rigorous (NOT DONE)
     Improve the code which graphs the data from the rangefinder (NOT DONE)
     Ask GITHUB COPILOT if there is a better method of getting the derivative at a point from a scatter plot (CONTINUE)
         ~Code must have a derivative funtion, this is VERY different from a line of best fit
