@@ -105,6 +105,16 @@ Tasks for the day (April 10th, 2024):
     Begin testing of rangefinder system (STARTED, NOT SUCCESSFUL YET)
         ~Note: I came up with a much better idea to test the rangefinder where I hold it straight up above a surface at a height I have already measured and film myself moving it up slowly with video physics. This will just simplify things so much so that's what we're going to do.
 
+Tasks for the day (April 16th, 2024):
+    Compare the two graphs and determine roughly how similar they look (DONE)
+        ~The graphs have the same relative shape when you look at the same x-interval
+    Add derivative functions to rangefinder data code (NOT DONE)
+        ~Stumped for now, come back next class period to finish this
+    Send the two graphs to some physics teachers (NOT DONE)
+        ~Ask how well the two graphs compare
+        ~Figure out how to send the rangefinder data to another device
+        ~Can only do this once I get a derivative for both of my lines of best fit
+
 Long term objectives:
     Show plan to test the rangefinder to a physics teacher to determine of it is rigorous (NOT DONE)
     Improve the code which graphs the data from the rangefinder (NOT DONE)
@@ -122,6 +132,7 @@ Note: Password for rasberry pi is: robots1234
 Handy command to remember: (This command can pull the data after it is recorded)
 scp pi@10.10.71.136:Documents/test.py /Users/denniscolombo/Documents
     ~Note: IP Address is incorrect!
+    ~Note2: You can find this with the 'Finder' in the 'Documents' section of it (kinda near recents and stuff, and as expected it's labeled output.txt)
 Get the IP on the raspberry pi:
 run 'ifconfig' in the terminal on the raspberry pi, IP is in the 'wlan0' section labeled 'inet'
 Doing this will give us the IP Address of the raspberry pi and allow us to get data from it.
