@@ -11,6 +11,7 @@ import numpy as np
     # Remember the IP Address is wrong!
 
 vector = []
+Xvalues = []
 
 # Open the file in read mode ('r')
 with open('output.txt', 'r') as f:
@@ -25,22 +26,26 @@ with open('output.txt', 'r') as f:
         x = ms - start
         y = number
         plt.scatter(x, y, c = "blue")
+        Xvalues.append(x)
+        Yint = vector[0]
 
-coefficients = np.polyfit(range(len(vector)), vector, 1)
+coefficients = np.polyfit(Xvalues, vector, 1)
 
-line_of_best_fit = np.poly1d(coefficients)
+# The coefficients represent the slope and y-intercept of the line of best fit
+slope, y_intercept = coefficients
 
-x_values_for_line = range(len(vector))
+rounded1 = round(slope, 4)
+rounded2 = round(y_intercept, 4)
 
-polynomial = np.poly1d(coefficients)
+xline = np.linspace(min(Xvalues), max(Xvalues), len(Xvalues))
 
-derivative = polynomial.deriv()
+yline = slope * xline + y_intercept
 
-derivative_str = str(derivative)
+plt.plot(xline, yline, color='red', label='Line of best fit')
 
-print('Derivative: ' + derivative_str)
+textString = f"The line of best fit is y = {rounded1} * x + {rounded2}"
 
-plt.plot(x_values_for_line, line_of_best_fit(x_values_for_line), color='red', label='Line of best fit')
+plt.text(1.1, 0.5, textString, color='black', transform=plt.gca().transAxes)
 
 plt.xlabel('Time (milliseconds)')
 
